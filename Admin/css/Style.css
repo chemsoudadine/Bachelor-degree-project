@@ -1,0 +1,125 @@
+/* Menu Bar Admin */
+.bg-grad{
+  background: linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+  background-color: -webkit-linear-gradient(to right, rgb(0,121,213), rgb(0,156,228)) !important;
+}
+body {
+  /* overflow-x: hidden; */
+  /* min-height: 100vh; */
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  /* line-height: 1.8; */
+  font-weight: normal;
+  background: #fafafa;
+}
+a {
+  text-decoration: none !important;
+}
+a.nav-link:hover {
+  font-weight: bold;
+  color: #000 !important;
+  background-color: #fafafa !important; 
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #000 !important;
+  background-color: #fafafa !important; 
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.nav-link.active {
+  font-weight: bold;
+  color: #000 !important;
+  background-color: #fafafa !important;  
+}
+
+
+.text-gray {
+  color: #aaa;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(128, 125, 125, 0.1);
+  transition: all 0.4s;
+  background: linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+  background: -webkit-linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+.page-content .modal-body h2 {
+  background: linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.page-content #sidebarCollapse {
+  color: #fff;
+  background: linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+}
+.page-content .card {
+  border: 1.5px solid rgb(0,121,213);
+}
+.page-content .card .card-header {
+  background: linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+  text-align: center;
+  color: #fff;
+}
+.page-content table {
+  line-height: normal;
+}
+.page-content th, td {
+  text-align: center !important;
+}
+.page-content .modal-content .modal-header {
+  background: linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+  color: #fff;
+}
+.page-item.active .page-link {
+  background: linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+}
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+/* </Menu Bar Admin */
+.sponsors-img {
+  margin-bottom: 1rem;
+}
+.sponsors-img img {
+  max-width: 100%; 
+}

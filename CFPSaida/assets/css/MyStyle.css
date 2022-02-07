@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+.bg-grad{
+    background: linear-gradient(to right, rgb(0,121,213), rgb(0,156,228));
+    background-color: -webkit-linear-gradient(to right, rgb(0,121,213), rgb(0,156,228)) !important;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.site-logo a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+}
+.site-logo a:hover {
+    text-decoration: none;
+}
+.modal-dialog {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+/*  For Committee */
+.nav-pills-custom .nav-link {
+  color: #aaa;
+  background: #fff;
+  position: relative;
+}
+.nav-pills-custom .nav-link.active {
+  /* color: #45b649; */
+  color: rgb(0,121,213);
+  background: #fff;
+}
+/*  End Committee */
+
+.card-body b {
+  color: rgb(0,121,213);
+}
+.tab-content {
+  width: 100vh;
+}
+
+
+/* -- cOMMITTE Accordion */
+.collapsible-link::before {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+  content: '';
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded='true']::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded='true']::before {
+  transform: rotate(180deg);
+}
+
+/* END */
+
+/* List with bullets */
+.list-bullets {
+  list-style: none;
+}
+
+.list-bullets li {
+  display: flex;
+  align-items: center;
+}
+
+.list-bullets li::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #5784d7;
+  border: 2px solid #8fb3f5;
+  display: block;
+  margin-right: 1rem;
+}
+ /* */
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid #fff;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
+
+@media(max-width: 768px) {
+  .modal-dialog {
+    min-height: calc(100vh - 20px);
+  }
+}
+
+
+/* Important Dates */
+
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: ' ';
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  border-radius: 1rem;
+}
+li.timeline-item {
+  margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: ' ';
+  background: #ddd;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* End  */
+
+.venue img {
+  width: 100%; /* You can set the dimensions to whatever you want */
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
