@@ -1,8 +1,9 @@
 # PFE-License
 Mon Projet fin d'étude de License ( Promo 2020)
 
-<img src="Img/Home-Page.png" alt="Admine" width="500"/>
-<img src="Img/Admin-ICS.png" alt="Admine" width="500"/>
+![Home](/Img/Home-Page.png)
+![Admine](/Img/Admin-ICS.png)
+
 # How To Run Project?
 To run this project, you must have installed a virtual server i.e XAMPP on your PC (for Windows).
 
