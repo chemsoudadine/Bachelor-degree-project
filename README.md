@@ -1,4 +1,4 @@
-# PFE-License
+# Bachelor degree project
 Mon Projet fin d'étude de License ( Promo 2020)
 
 ![Home](/Img/Home-Page.png)
